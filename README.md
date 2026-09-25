@@ -26,15 +26,17 @@ back it up first: the installer replaces the existing theme directory.
 
 On tested Omarchy 4.0.4-1, Git-installed themes regenerate terminal and editor
 configurations from `colors.toml`; bundled `neovim.lua` and `vscode.json` are
-not used. The preview shows the local Everforest editor override. Git-installed
-editors can differ in syntax details while using the same base palette.
+not used. The preview shows Ghostty and Neovim using the generated configuration from
+a clean Git installation. Local Everforest editor overrides can differ in syntax details.
 
 ## Validation
 
 Seven wallpapers decode successfully. Palette foreground/background contrast
 is 7.38:1. All 19 installed stock app templates generate with valid TOML/JSON
 and no unresolved tokens. The real desktop preview has a 16:9 aspect ratio.
-These checks do not constitute a live end-to-end theme installation test.
+The public repository was also installed successfully with `omarchy theme install`
+in an isolated headless environment; generated configurations and wallpapers were
+verified. Desktop preview windows used those generated editor settings.
 
 ## License and credits
 
